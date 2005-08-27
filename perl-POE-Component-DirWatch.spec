@@ -5,27 +5,35 @@
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	POE
 %define		pnam	Component-DirWatch
-Summary:	POE::Component::DirWatch
+Summary:	POE::Component::DirWatch - POE directory watcher
+Summary(pl):	POE::Component::DirWatch - obserwowanie katalogów w POE
 Name:		perl-POE-Component-DirWatch
 Version:	0.02
 Release:	0.1
-License:	same as perl
+# same as perl
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-URL:		poe.perl.org
+# Source0-md5:	d41814d4a100c10f270c09638f193ccc
+URL:		http://poe.perl.org/
+BuildRequires:	perl-POE
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
-BuildRequires:	perl-POE
-%if %{with tests}
-#BuildRequires:	perl-POE
-%endif
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-POE::Component::DirWatch watches a directory for files. It creates a separate session which invokes a user-supplied calback
-as soon as if finds a file in the directory. Its primary intended use is processing a "drop-box" style directory, such as
-an FTP upload directory.
+POE::Component::DirWatch watches a directory for files. It creates a
+separate session which invokes a user-supplied callback as soon as if
+finds a file in the directory. Its primary intended use is processing
+a "drop-box" style directory, such as an FTP upload directory.
+
+%description -l pl
+POE::Component::DirWatch obserwowuje katalog pod k±tem plików. Tworzy
+oddzieln± sesjê, która wywo³uje przekazane przez u¿ytkownika wywo³anie
+zwrotne zaraz jak znajdzie w katalogu plik. G³ównym zastosowaniem jest
+przetwarzanie katalogów s³u¿±cych do wrzucania plików, takich jak
+katalog upload dostêpny przez FTP.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
