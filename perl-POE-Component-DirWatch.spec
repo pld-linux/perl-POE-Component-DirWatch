@@ -6,7 +6,7 @@
 %define		pdir	POE
 %define		pnam	Component-DirWatch
 Summary:	POE::Component::DirWatch - POE directory watcher
-Summary(pl):	POE::Component::DirWatch - obserwowanie katalogów w POE
+Summary(pl.UTF-8):   POE::Component::DirWatch - obserwowanie katalogÃ³w w POE
 Name:		perl-POE-Component-DirWatch
 Version:	0.02
 Release:	1
@@ -28,12 +28,12 @@ separate session which invokes a user-supplied callback as soon as if
 finds a file in the directory. Its primary intended use is processing
 a "drop-box" style directory, such as an FTP upload directory.
 
-%description -l pl
-POE::Component::DirWatch obserwowuje katalog pod k±tem plików. Tworzy
-oddzieln± sesjê, która wywo³uje przekazane przez u¿ytkownika wywo³anie
-zwrotne zaraz jak znajdzie w katalogu plik. G³ównym zastosowaniem jest
-przetwarzanie katalogów s³u¿±cych do wrzucania plików, takich jak
-katalog upload dostêpny przez FTP.
+%description -l pl.UTF-8
+POE::Component::DirWatch obserwowuje katalog pod kÄ…tem plikÃ³w. Tworzy
+oddzielnÄ… sesjÄ™, ktÃ³ra wywoÅ‚uje przekazane przez uÅ¼ytkownika wywoÅ‚anie
+zwrotne zaraz jak znajdzie w katalogu plik. GÅ‚Ã³wnym zastosowaniem jest
+przetwarzanie katalogÃ³w sÅ‚uÅ¼Ä…cych do wrzucania plikÃ³w, takich jak
+katalog upload dostÄ™pny przez FTP.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
