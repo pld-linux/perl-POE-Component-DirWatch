@@ -6,7 +6,7 @@
 %define		pdir	POE
 %define		pnam	Component-DirWatch
 Summary:	POE::Component::DirWatch - POE directory watcher
-Summary(pl.UTF-8):   POE::Component::DirWatch - obserwowanie katalogów w POE
+Summary(pl.UTF-8):	POE::Component::DirWatch - obserwowanie katalogów w POE
 Name:		perl-POE-Component-DirWatch
 Version:	0.02
 Release:	1
