@@ -9,7 +9,7 @@ Summary:	POE::Component::DirWatch - POE directory watcher
 Summary(pl.UTF-8):	POE::Component::DirWatch - obserwowanie katalogów w POE
 Name:		perl-POE-Component-DirWatch
 Version:	0.300000
-Release:	2
+Release:	3
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
@@ -17,8 +17,9 @@ Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version
 # Source0-md5:	0cb83b9405b43955988d0461333b5a45
 URL:		http://poe.perl.org/
 BuildRequires:	perl-File-Signature
+BuildRequires:	perl-Moose >= 0.24
 BuildRequires:	perl-MooseX-Types-Path-Class
-BuildRequires:	perl-POE
+BuildRequires:	perl-POE >= 0.12
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
