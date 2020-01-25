@@ -2,7 +2,6 @@
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
 #
-%include	/usr/lib/rpm/macros.perl
 %define		pdir	POE
 %define		pnam	Component-DirWatch
 Summary:	POE::Component::DirWatch - POE directory watcher
